@@ -8,16 +8,17 @@ const AddExpense = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-         dispatch({type:'ADD_BOOK' , payload: {
+         dispatch({type:'ADD_BOOK' , payload: { 
+             id:Date.now(),
              text,
-             amount: parseInt(amount),
-             id:Date.now()
+             amount: parseInt(amount)
+            
 
          }})
          setAmount('')
          setText('')
     }
-    console.log({text,amount})
+
     return ( 
         <div>
             <h3>Add New Transaction</h3>
