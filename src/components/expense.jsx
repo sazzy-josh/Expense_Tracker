@@ -31,7 +31,7 @@ const Expense = () => {
             </div>
             <div className="money">
                 <h4>EXPENSE</h4>
-                <h4 style={{color:"red",fontSize:"30px"}}>${expensess}</h4>
+                <h4 style={{color:"red",fontSize:"30px"}}>-${Math.abs(expensess)}</h4>
             </div>
         </div>
         
