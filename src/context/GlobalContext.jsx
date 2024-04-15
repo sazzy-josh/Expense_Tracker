@@ -20,10 +20,7 @@ const reducerFn = (state ,action) => {
 
 const GlobalContextProvider = (props) => {
     const [expenses, dispatch] = useReducer( reducerFn , [
-        { id: 1, text: 'Flower', amount: -10 },
-        { id: 2, text: 'Salary', amount: 900 },
-        { id: 3, text: 'Book', amount: -10 },
-        { id: 4, text: 'Camera', amount: 150 }
+       
     ])
     return ( 
         <GlobalContext.Provider value={{expenses , dispatch}}>
